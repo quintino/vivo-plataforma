@@ -9,6 +9,7 @@ import java.util.Date;
 @Setter
 public class Runner {
     private Date hora;
+    private String numeroSuperHeroi;
     private String superHeroi;
     private int volta;
     private Date tempoVolta;
