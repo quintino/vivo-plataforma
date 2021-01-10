@@ -19,6 +19,9 @@ public class WinnerResult {
     private int quantidadeVoltas;
 
     @JsonFormat(pattern = "mm:ss.SSS")
+    private Date melhorVolta;
+
+    @JsonFormat(pattern = "mm:ss.SSS")
     private Date tempoTotalProva;
 
     public WinnerResult() {

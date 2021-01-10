@@ -76,6 +76,10 @@ public class ApiServiceImpl implements ApiService {
                 posicao++;
                 winner.setPosicaoChegada(posicao);
             }
+            if (winner.getMelhorVolta() == null ||
+                    runner.getTempoVolta().getTime() < winner.getMelhorVolta().getTime()) {
+                winner.setMelhorVolta(runner.getTempoVolta());
+            }
             winner.setCodigoSuperHeroi(runner.getNumeroSuperHeroi());
             winner.setNomeSuperHeroi(runner.getSuperHeroi());
             winner.setQuantidadeVoltas(runner.getVolta());
